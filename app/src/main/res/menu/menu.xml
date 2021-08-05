@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/orders"
+    android:icon="@drawable/orders"
+    android:title="Order"/>
+
+    <item
+        android:id="@+id/rentin"
+        android:icon="@drawable/goout"
+        android:title="Rent In"/>
+    <item
+        android:id="@+id/gold"
+        android:icon="@drawable/gold"
+        android:title="Money"/>
+    <item
+        android:id="@+id/videos"
+        android:icon="@drawable/videos"
+        android:title="Videos"/>
+</menu>

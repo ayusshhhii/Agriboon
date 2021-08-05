@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "616655531169",
+    "firebase_url": "https://agriboon-8e35b.firebaseio.com",
+    "project_id": "agriboon-8e35b",
+    "storage_bucket": "agriboon-8e35b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616655531169:android:120eb92e736b46860694e0",
+        "android_client_info": {
+          "package_name": "agriboon.example.myagriboonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616655531169-550tde56c86np0ciouqul082cam52fgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7D3GRzPfRNXMRPAX57nVLBSODspLFG6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616655531169-550tde56c86np0ciouqul082cam52fgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
