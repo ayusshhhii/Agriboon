@@ -10,7 +10,7 @@
     tools:openDrawer="end">
 
     <include
-        layout="@layout/layout_order_dashboard"
+        layout="@layout/layout_gold_dashboard"
         android:id="@+id/layout_dashboard"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -28,5 +28,7 @@
             android:layout_height="match_parent"/>
 
     </com.google.android.material.navigation.NavigationView>
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
