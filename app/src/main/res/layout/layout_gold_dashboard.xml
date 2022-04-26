@@ -116,7 +116,7 @@
                         android:drawablePadding="8dp"
                         android:drawableTint="@color/colorgrey"
                         android:focusable="false"
-                        android:hint="Search for grocery"
+                        android:hint="Search for category"
                         android:padding="8dp"
                         android:textColorHint="@color/colorgrey" />
 
@@ -149,7 +149,7 @@
 
                 <ImageView
 
-                    android:id="@+id/imageView6"
+                    android:id="@+id/mexca"
                     android:layout_width="170dp"
                     android:layout_height="170dp"
                     android:layout_marginLeft="95dp"

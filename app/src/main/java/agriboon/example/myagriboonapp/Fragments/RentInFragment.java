@@ -1,5 +1,6 @@
 package agriboon.example.myagriboonapp.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +21,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import agriboon.example.myagriboonapp.Adapters.SimpleVerticalAdapter;
+import agriboon.example.myagriboonapp.IncompleteActivity;
 import agriboon.example.myagriboonapp.Model.SimpleVerticalModel;
+import agriboon.example.myagriboonapp.Prevalent.FormfillActivity;
 import agriboon.example.myagriboonapp.R;
 
 public class RentInFragment extends Fragment implements View.OnClickListener {
@@ -30,6 +33,8 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
         // Required empty public constructor
     }
 
+    ImageView excaimg;
+    ImageView mexcaimg;
     DrawerLayout drawerLayout;
     ImageView navigationBar;
     NavigationView navigationView;
@@ -44,8 +49,13 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
 
         view = inflater.inflate(R.layout.fragment_rentin, container, false);
+        excaimg= (ImageView)view.findViewById(R.id.excain);
+        mexcaimg=(ImageView) view.findViewById(R.id.miniexcain);
+
         onSetNavigationDrawerEvents();
         return view;
+
+
 
     }
 
@@ -78,6 +88,22 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
         send_feedback.setOnClickListener(this);
         report_safety.setOnClickListener(this);
         rateus.setOnClickListener(this);
+
+        excaimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), IncompleteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mexcaimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), IncompleteActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -121,5 +147,7 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
 
         }
     }
+
+
 }
 

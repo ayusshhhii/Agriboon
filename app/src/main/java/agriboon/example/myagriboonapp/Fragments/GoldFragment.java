@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 
 import agriboon.example.myagriboonapp.HomeActivity;
+import agriboon.example.myagriboonapp.Prevalent.FormfillActivity;
 import agriboon.example.myagriboonapp.R;
 
 public class GoldFragment extends Fragment implements View.OnClickListener {
@@ -29,6 +30,7 @@ public class GoldFragment extends Fragment implements View.OnClickListener {
     DrawerLayout drawerLayout;
     ImageView navigationBar;
     ImageView excav;
+    ImageView mexcav;
     NavigationView navigationView;
     private View view;
     private RelativeLayout loginSignup, bookmarks, gold;
@@ -41,6 +43,7 @@ public class GoldFragment extends Fragment implements View.OnClickListener {
 
         view = inflater.inflate(R.layout.fragment_gold, container, false);
         excav=(ImageView)view.findViewById(R.id.exca);
+        mexcav=(ImageView)view.findViewById(R.id.mexca);
 
         onSetNavigationDrawerEvents();
         return view;
@@ -79,7 +82,14 @@ public class GoldFragment extends Fragment implements View.OnClickListener {
         excav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                Intent intent = new Intent(getActivity(), FormfillActivity.class);
+                startActivity(intent);            }
+        });
+
+        mexcav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FormfillActivity.class);
                 startActivity(intent);            }
         });
 

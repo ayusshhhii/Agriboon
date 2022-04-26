@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Prevalent.FormfillActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="557dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="27dp"
+        android:orientation="vertical"
+
+        >
+
+    <EditText
+        android:id="@+id/nameequip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorAccent"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/brandequip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorAccent"
+        android:hint="Brand of Equipment"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/priceequip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorAccent"
+        android:hint="Monthly renting price"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/desequip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorAccent"
+        android:hint="Description"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/buydate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorAccent"
+        android:hint="When did you buy this equipment"
+        android:inputType="datetime"
+        android:padding="16dp" />
+
+        <Button
+            android:id="@+id/formsavebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
