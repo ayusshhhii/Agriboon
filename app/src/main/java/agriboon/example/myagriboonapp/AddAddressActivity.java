@@ -30,6 +30,7 @@ public class AddAddressActivity extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference ref;
     UserAd userAd;
+    private Button btnadd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,8 @@ public class AddAddressActivity extends AppCompatActivity {
 
         mName = findViewById(R.id.ad_name);
         mCity = findViewById(R.id.ad_city);
-        mAddress = findViewById(R.id.ad_address);
+//        mAddress = findViewById(R.id.add_the_address);
+        btnadd=findViewById(R.id.add_the_address);
         mCode = findViewById(R.id.ad_code);
         mNumber = findViewById(R.id.ad_phone);
         mAddAddressBtn = findViewById(R.id.check_out);
@@ -46,6 +48,8 @@ public class AddAddressActivity extends AppCompatActivity {
         ref= database.getReference("Address");
         userAd= new UserAd();
     }
+
+//    View.OnClickListener(vi)
 
     private void getValues(){
         userAd.setName(mName.getText().toString());
@@ -56,46 +60,52 @@ public class AddAddressActivity extends AppCompatActivity {
     }
 
     public void addtheaddress(View view) {
-        Object obj= getIntent().getSerializableExtra("detail");
-        String name = mName.getText().toString();
-        String city = mCity.getText().toString();
-        String address = mAddress.getText().toString();
-        String code = mCode.getText().toString();
-        String number = mNumber.getText().toString();
-        if (TextUtils.isEmpty(name)) {
-            Toast.makeText(AddAddressActivity.this, "Please enter your name...", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(city)) {
-            Toast.makeText(AddAddressActivity.this, "Please enter your city...", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(address)) {
-            Toast.makeText(AddAddressActivity.this, "Please enter your address...", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(code)) {
-            Toast.makeText(AddAddressActivity.this, "Please enter your pin code...", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(number)) {
-            Toast.makeText(AddAddressActivity.this, "Please enter your phone number...", Toast.LENGTH_SHORT).show();
-        } else {
-            ref.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    getValues();
-                    ref.child("User Address").child(name).setValue(userAd);
-                    Toast.makeText(AddAddressActivity.this, "Address Added", Toast.LENGTH_SHORT).show();
-                    double amount=0.0;
-                    if(obj instanceof SimpleVerticalModel){
-                        SimpleVerticalModel f= (SimpleVerticalModel) obj;
-                        amount= f.getSimple_coupon();
-                    }
 
-                    Intent intent = new Intent(AddAddressActivity.this, PaymentActivity.class);
-                    intent.putExtra("amount", amount);
-                    startActivity(intent);
-                }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
+        Intent myIntent = new Intent(AddAddressActivity.this, PaymentActivity.class);
+        AddAddressActivity.this.startActivity(myIntent);
 
-                }
-            });
-
-        }
+//        Object obj= getIntent().getSerializableExtra("detail");
+//        String name = mName.getText().toString();
+//        String city = mCity.getText().toString();
+//        String address = mAddress.getText().toString();
+//        String code = mCode.getText().toString();
+//        String number = mNumber.getText().toString();
+//        if (TextUtils.isEmpty(name)) {
+//            Toast.makeText(AddAddressActivity.this, "Please enter your name...", Toast.LENGTH_SHORT).show();
+//        } else if (TextUtils.isEmpty(city)) {
+//            Toast.makeText(AddAddressActivity.this, "Please enter your city...", Toast.LENGTH_SHORT).show();
+//        } else if (TextUtils.isEmpty(address)) {
+//            Toast.makeText(AddAddressActivity.this, "Please enter your address...", Toast.LENGTH_SHORT).show();
+//        } else if (TextUtils.isEmpty(code)) {
+//            Toast.makeText(AddAddressActivity.this, "Please enter your pin code...", Toast.LENGTH_SHORT).show();
+//        } else if (TextUtils.isEmpty(number)) {
+//            Toast.makeText(AddAddressActivity.this, "Please enter your phone number...", Toast.LENGTH_SHORT).show();
+//        } else {
+//            ref.addValueEventListener(new ValueEventListener() {
+//                @Override
+//                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                    getValues();
+//                    ref.child("User Address").child(name).setValue(userAd);
+//                    Toast.makeText(AddAddressActivity.this, "Address Added", Toast.LENGTH_SHORT).show();
+//                    double amount=0.0;
+//                    if(obj instanceof SimpleVerticalModel){
+//                        SimpleVerticalModel f= (SimpleVerticalModel) obj;
+//                        amount= f.getSimple_coupon();
+//                    }
+//
+//                    myIntent.putExtra("amount", amount);
+//
+//
+//
+//                }
+//
+//                @Override
+//                public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                }
+//            });
+//
+//        }
     }
 }

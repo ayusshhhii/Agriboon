@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:text="Veggiee spice delight"
+        android:text="Heavy duty Tractor"
         android:textColor="@color/colorBlack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="₹ 40"
+        android:text="₹ 4000 / month"
         android:textColor="@color/colorDarkgrey"
         app:layout_constraintEnd_toEndOf="@+id/item_name"
         app:layout_constraintHorizontal_bias="0.0"
@@ -145,7 +145,7 @@
         android:layout_width="205dp"
         android:layout_height="57dp"
         android:backgroundTint="#4CAF50"
-        android:text="Buy Now"
+        android:text="Rent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/item_add_cart" />
 

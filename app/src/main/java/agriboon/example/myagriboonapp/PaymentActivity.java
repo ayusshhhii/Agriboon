@@ -1,6 +1,7 @@
 package agriboon.example.myagriboonapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,21 +20,24 @@ import org.json.JSONObject;
 public class PaymentActivity extends AppCompatActivity implements PaymentResultListener {
     TextView mTotal;
     Button checkout;
-    double amount=0.0;
+//    double amount=0.0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        amount=getIntent().getDoubleExtra("amount", 0.0);
+//        amount=getIntent().getDoubleExtra("amount", 0.0);
         setContentView(R.layout.activity_payment);
         mTotal=findViewById(R.id.Sub_total);
         checkout=findViewById(R.id.check_out);
-        mTotal.setText("₹"+amount+"");
+//        mTotal.setText("₹"+amount+"");
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startPayment();
+//                startPayment();
+                Intent myIntent = new Intent(PaymentActivity.this, done_payment.class);
+                PaymentActivity.this.startActivity(myIntent);
             }
+
         });
     }
     public void startPayment() {
@@ -54,9 +58,9 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
             options.put("currency", "INR");
             //double total= Double.parseDouble(mAmountText.getText().toString());
             //multiply with 100 to get exact amount in rupee
-            amount= amount*100;
+//            amount= amount*100;
             //amount
-            options.put("amount", amount);
+//            options.put("amount", amount);
             JSONObject preFill= new JSONObject();
             //email
             preFill.put("email", "2as1931154@gmail.com");

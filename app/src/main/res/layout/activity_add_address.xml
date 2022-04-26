@@ -100,6 +100,7 @@
             android:padding="16dp" />
 
         <Button
+
             android:id="@+id/add_the_address"
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -107,11 +108,10 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="50dp"
             android:layout_marginRight="16dp"
+            android:onClick="addtheaddress"
             android:text="Add Address"
             android:textAllCaps="false"
-            android:textSize="20sp"
-            android:onClick="addtheaddress"
-            />
+            android:textSize="20sp" />
 
 
     </LinearLayout>

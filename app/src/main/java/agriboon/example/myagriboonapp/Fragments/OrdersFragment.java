@@ -127,9 +127,6 @@ public class OrdersFragment extends Fragment implements View.OnClickListener{
         categoryModelList.add(new CategoryModel(R.drawable.fertilizers,"Fertilizers"));
         categoryModelList.add(new CategoryModel(R.drawable.weeds,"Weedicides"));
         categoryModelList.add(new CategoryModel(R.drawable.pesticides,"Pesticides"));
-        categoryModelList.add(new CategoryModel(R.drawable.equipments,"Farming Equipments"));
-        categoryModelList.add(new CategoryModel(R.drawable.vegetables,"Farm Fresh Vegetables"));
-        categoryModelList.add(new CategoryModel(R.drawable.fruits,"Farm Fresh Fruits"));
         categoryModelList.add(new CategoryModel(R.drawable.transport,"Transport on rent"));
         categoryModelList.add(new CategoryModel(R.drawable.equipmentsonrent,"Equipments on rent"));
 
@@ -172,14 +169,13 @@ public class OrdersFragment extends Fragment implements View.OnClickListener{
         recyclerViewSimple.setLayoutManager( layoutManagerSimpleVerticalSlider);
 
         simpleVerticalModelList = new ArrayList<>();
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 250, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 25.6, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 304.5, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 124.8, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 600, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 700, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 450.5, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Arhar Daal", "Yellow Daal in Noida", 866.50, "20% OFF", "Well Sanitized Kitchen", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Tata Tractor", "renting monthly", 4000, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Sprayer", "renting monthly", 2500, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Baler", "renting monthly", 3045, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Harrow", "renting monthly", 1248, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Plow", "renting monthly", 6000, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Manure spreader", "renting monthly", 7000, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Tiller", "renting monthly", 4505, "20% OFF", "Well Sanitized ", "3.5" ));
 
 
 

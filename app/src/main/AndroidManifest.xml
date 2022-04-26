@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAgriboonApp">
-        <activity android:name=".AddAddressActivity"></activity>
+        <activity android:name=".done_payment"></activity>
+        <activity android:name=".AddAddressActivity" />
         <activity android:name=".PaymentActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".ItemActivity" />
@@ -26,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupActivity" />
+
         <meta-data
             android:name="com.razorpay.Apikey"
             android:value="rzp_test_16aDCdOdDuAfHO" />

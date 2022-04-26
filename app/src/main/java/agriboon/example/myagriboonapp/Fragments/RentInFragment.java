@@ -11,9 +11,16 @@ import android.widget.Toast;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import agriboon.example.myagriboonapp.Adapters.SimpleVerticalAdapter;
+import agriboon.example.myagriboonapp.Model.SimpleVerticalModel;
 import agriboon.example.myagriboonapp.R;
 
 public class RentInFragment extends Fragment implements View.OnClickListener {
@@ -22,6 +29,13 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
     public RentInFragment() {
         // Required empty public constructor
     }
+    //////////simple vertical slider starts//////////
+
+    private RecyclerView recyclerViewSimple;
+    private SimpleVerticalAdapter simpleVerticalAdapter;
+    private List<SimpleVerticalModel> simpleVerticalModelList;
+
+    //////////simple vertical slider ends////////////
 
     DrawerLayout drawerLayout;
     ImageView navigationBar;
@@ -30,15 +44,19 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout loginSignup, bookmarks, gold;
     private TextView your_orders, fav_orders, address_book, online_ordering_help, send_feedback, report_safety, rateus;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         view = inflater.inflate(R.layout.fragment_rentin, container, false);
         onSetNavigationDrawerEvents();
         return view;
 
     }
+
+
     private void onSetNavigationDrawerEvents() {
         drawerLayout = (DrawerLayout) view.findViewById(R.id.drawerLayout);
         navigationView = (NavigationView) view.findViewById(R.id.navigationView);
