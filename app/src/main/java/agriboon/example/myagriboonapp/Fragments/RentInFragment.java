@@ -29,13 +29,6 @@ public class RentInFragment extends Fragment implements View.OnClickListener {
     public RentInFragment() {
         // Required empty public constructor
     }
-    //////////simple vertical slider starts//////////
-
-    private RecyclerView recyclerViewSimple;
-    private SimpleVerticalAdapter simpleVerticalAdapter;
-    private List<SimpleVerticalModel> simpleVerticalModelList;
-
-    //////////simple vertical slider ends////////////
 
     DrawerLayout drawerLayout;
     ImageView navigationBar;

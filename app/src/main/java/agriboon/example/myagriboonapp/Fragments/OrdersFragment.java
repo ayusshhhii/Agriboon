@@ -146,11 +146,9 @@ public class OrdersFragment extends Fragment implements View.OnClickListener{
         recyclerViewBanner.setLayoutManager(layoutManagerBanner);
 
         bannerModelList = new ArrayList<>();
-        bannerModelList.add(new BannerModel(R.drawable.sale3));
+        bannerModelList.add(new BannerModel(R.drawable.sale1new));
         bannerModelList.add(new BannerModel(R.drawable.sale1));
-        bannerModelList.add(new BannerModel(R.drawable.sale2));
-        bannerModelList.add(new BannerModel(R.drawable.sale3));
-        bannerModelList.add(new BannerModel(R.drawable.sale2));
+        bannerModelList.add(new BannerModel(R.drawable.sale1new));
         bannerModelList.add(new BannerModel(R.drawable.sale1));
 
 
@@ -169,13 +167,14 @@ public class OrdersFragment extends Fragment implements View.OnClickListener{
         recyclerViewSimple.setLayoutManager( layoutManagerSimpleVerticalSlider);
 
         simpleVerticalModelList = new ArrayList<>();
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Tata Tractor", "renting monthly", 4000, "20% OFF", "Well Sanitized ", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Sprayer", "renting monthly", 2500, "20% OFF", "Well Sanitized ", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Baler", "renting monthly", 3045, "20% OFF", "Well Sanitized ", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Harrow", "renting monthly", 1248, "20% OFF", "Well Sanitized ", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Plow", "renting monthly", 6000, "20% OFF", "Well Sanitized ", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Manure spreader", "renting monthly", 7000, "20% OFF", "Well Sanitized ", "3.5" ));
-        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.tintlogo, " " ,"Tiller", "renting monthly", 4505, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.equipments, " " ,"Tata Tractor", "renting monthly", 4000, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.wheel, " " ,"Sprayer", "renting monthly", 2500, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.skid, " " ,"Baler", "renting monthly", 3045, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.equipmentsonrent, " " ,"Harrow", "renting monthly", 1248, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.mini, " " ,"Plow", "renting monthly", 6000, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.lift, " " ,"Manure spreader", "renting monthly", 7000, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.wheel, " " ,"Tiller", "renting monthly", 4505, "20% OFF", "Well Sanitized ", "3.5" ));
+        simpleVerticalModelList.add(new SimpleVerticalModel(R.drawable.equipments, " " ,"Tata Tractor", "renting monthly", 4000, "20% OFF", "Well Sanitized ", "3.5" ));
 
 
 

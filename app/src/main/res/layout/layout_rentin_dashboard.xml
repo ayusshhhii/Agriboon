@@ -72,6 +72,7 @@
                         android:src="@drawable/menu"
                         app:tint="@color/colorDarkgrey" />
 
+
                     <ImageView
                         android:id="@+id/shoppingcart"
                         android:layout_width="30dp"
@@ -117,7 +118,7 @@
                         android:padding="8dp"
                         android:focusable="false"
                         android:drawableLeft="@drawable/search"
-                        android:hint="Search for grocery"/>
+                        android:hint="Search for category"/>
 
                 </androidx.appcompat.widget.Toolbar>
 
@@ -136,20 +137,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:orientation="vertical">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerViewRentCategory"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rentRecyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+
+
 
 
 

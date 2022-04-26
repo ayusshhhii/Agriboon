@@ -3,7 +3,7 @@
 <item
     android:id="@+id/orders"
     android:icon="@drawable/orders"
-    android:title="Order"/>
+    android:title="Buy"/>
 
     <item
         android:id="@+id/rentin"
@@ -12,9 +12,9 @@
     <item
         android:id="@+id/gold"
         android:icon="@drawable/gold"
-        android:title="Money"/>
+        android:title="Rent Out"/>
     <item
         android:id="@+id/videos"
         android:icon="@drawable/videos"
-        android:title="Videos"/>
+        android:title="FAQs"/>
 </menu>

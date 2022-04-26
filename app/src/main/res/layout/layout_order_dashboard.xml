@@ -118,7 +118,7 @@
                 android:padding="8dp"
                 android:focusable="false"
                 android:drawableLeft="@drawable/search"
-                android:hint="Search for grocery"/>
+                android:hint="Search for item"/>
 
             </androidx.appcompat.widget.Toolbar>
 

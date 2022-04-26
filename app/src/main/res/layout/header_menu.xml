@@ -58,11 +58,14 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:contentDescription="Profile Image"
-            android:src="@mipmap/ic_launcher_round"
+            android:src="@drawable/farmer"
+            app:layout_constraintBottom_toBottomOf="@id/gl_image_bottom"
             app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintTop_toTopOf="@id/margin_top_percentage"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dashboardHeader_profileName"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/margin_start_percentage"
-            app:layout_constraintBottom_toBottomOf="@id/gl_image_bottom"/>
+            app:layout_constraintTop_toTopOf="@id/margin_top_percentage"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/tv_dashboardHeader_profileName"

@@ -117,7 +117,7 @@
                         android:padding="8dp"
                         android:focusable="false"
                         android:drawableLeft="@drawable/search"
-                        android:hint="Search for grocery"/>
+                        android:hint="Search for query"/>
 
                 </androidx.appcompat.widget.Toolbar>
 
@@ -135,19 +135,63 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="videos"
-                    android:layout_marginTop="200dp"
-                    android:layout_marginLeft="200dp"/>
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="What is Rent-In feature in the app?" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="20dp"
+                    android:text="The Rent-In option is an amazing feature that allows you to choose any available equipment for rent. We have variety of heavy equipments available with us like Tractor, plow, sprayer, tiller etc which are otherwise very expensive when bought but with our platform you can get it at a very lost cost on rent for a monthly basis" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="What is Rent-Out feature in the app?" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="20dp"
+                    android:text="The Rent-out feature is another USP of Agriboon app that allows framing equipment owners to rent out their equipments when not in use and use them as an additional source of income. You can easily rent out your equipment on Agriboon by filling a simple form. If your equipment is in good condition and is approved by our team then you'll be able to rent it out on a monthly basis. The nearby interested customers will themselves reach out to you through the phone number that you had entered while filling the form"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="What are the other products available on the app?" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="20dp"
+                    android:text="We have variety of farming equipment available and along with that we also sell seeds, weedicides, pesticides, fertilizers and other such products that are important in farming so as to enhance the marketplace and allow our farmers to get everything on a single platform."/>
 
             </LinearLayout>
-
-
 
 
         </androidx.core.widget.NestedScrollView>
